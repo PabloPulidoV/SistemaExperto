@@ -1,0 +1,22 @@
+<p>Estas Buscando:<strong>{{query}}</strong></p>
+
+{%if impera%}
+<html>
+<head>
+	<title>Buscar</title>
+</head>
+<body>
+	{%for tiposs in tiposs%}
+		<li>{{tiposs.nombre}}</li>
+	{%endfor%}
+	<h1>¿Que tipo de Paradigma es?</h1>
+	<p>Ingresa el nombre</p>
+	<form action = "/estructurado/" method = "get">
+		<input type = "text" name = "q">
+		<input type = "submit" value = "Buscar">
+	</form>
+</body>
+</html>
+{%else%}
+	<p>Ningun libro coincide con el criterio de busqueda realice el test de nuevo</p>
+{%endif%}

@@ -1,0 +1,16 @@
+<p>Estas Buscando:<strong>{{query}}</strong></p>
+
+{%if impera%}
+<html>
+<head>
+	<title>Buscar</title>
+</head>
+<body>
+	{%for impera in impera%}
+		<h1>{{impera.nombre}}</h1>
+	{%endfor%}
+</body>
+</html>
+{%else%}
+	<p>Ningun libro coincide con el criterio de busqueda realice el test de nuevo</p>
+{%endif%}

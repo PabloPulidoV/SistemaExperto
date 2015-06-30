@@ -1,0 +1,12 @@
+<p>Estas Buscando:<strong>{{query}}</strong></p>
+
+{%if libros%}
+	<p>Libros encontrados: {{libros|lenght}} libro{{libros|pluralize}}</p>
+	<ul>
+		{%for libros in libros%}
+			<li>{{libros.titulo}}</li>
+		{%endfor%}
+	</ul>
+{%else%}
+	<p>Ningun libro coincide con el criterio de busqueda</p>
+{%endif%}

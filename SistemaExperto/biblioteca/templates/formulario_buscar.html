@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Buscar</title>
+</head>
+<body>
+	{% if error%}
+		<p style= "color: red;">Por favor introduce un termino de bisqueda menor a 20 caracteres</p>
+	{%endif%}
+	<h1>¿Que tipo de lenguaje buscas? 1.- Declarativo / 2.- Imperativo</h1>
+	<p>Ingresa el nombre</p>
+	<form action = "/Lenguaje-Imperativo/" method = "get">
+		<input type = "text" name = "q">
+		<input type = "submit" value = "Buscar">
+	</form>
+</body>
+</html>
